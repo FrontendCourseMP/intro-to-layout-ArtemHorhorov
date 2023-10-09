@@ -1,0 +1,126 @@
+:root {
+  font-size: 67.5%;
+  --main-color: #34344E;
+  --secondary-color: #F49C89;
+  --text-color: #eceef8;
+  --nav-color: #FFF;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Steelfish';
+  font-style: normal;
+  font-weight: bold;
+  src: url(/fonts/SteelfishRg-Bold.woff2) format('woff2');
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.navigation {
+  list-style-type: none;
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.navigation-logo {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.navigation-contacts {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.navigation-menu {
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--nav-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  border: 0;
+}
+
+.h1-hidden {
+  visibility: hidden;
+}
+
+.title-1 {
+  font-family: 'Steelfish';
+  color: var(--text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.hidden-h1 {
+  list-style-type: none;
+}
+
+.Rectangle-75 {
+  border-radius: 200px;
+  background: url('/img/icons/Rectangle\ 75.svg'), lightgray 50% / cover no-repeat;
+}
+
+.Rectangle-76 {
+  border-radius: 200px;
+  background: url('/img/icons/Rectangle\ 76.svg'), lightgray 50% / cover no-repeat;
+}
+
+.Firstst-info {
+  width: 230px;
+  height: 17px;
+  color: var(--nav-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.GetTestDrive {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-style: normal;
+  color: var(--nav-color);
+  display: flex;
+  width: 320px;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 100px;
+  background: var(--secondary-color);
+}
