@@ -6,20 +6,40 @@
   --nav-color: #FFF;
 }
 
+/* inter-regular - cyrillic_latin */
 @font-face {
   font-display: swap;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+  src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2');
 }
 
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-cyrillic_latin-500.woff2') format('woff2');
+}
+
+/* steelfish-bold - cyrillic_latin */
 @font-face {
   font-display: swap;
   font-family: 'Steelfish';
   font-style: normal;
   font-weight: bold;
-  src: url(/fonts/SteelfishRg-Bold.woff2) format('woff2');
+  src: url('/fonts/SteelfishRg-Bold.woff2') format('woff2');
+}
+
+/* steelfish-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Steelfish';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/SteelfishRg-Regular.woff2) format('woff2');
 }
 
 body {
@@ -79,6 +99,19 @@ body {
   font-weight: 700;
   line-height: 110%;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.title-2 {
+  font-family: 'Steelfish';
+  color: var(--text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .hidden-h1 {
@@ -112,6 +145,7 @@ body {
 .GetTestDrive {
   font-family: 'Inter';
   font-weight: 500;
+  text-transform: uppercase;
   font-style: normal;
   color: var(--nav-color);
   display: flex;
@@ -123,4 +157,556 @@ body {
   border: 0;
   border-radius: 100px;
   background: var(--secondary-color);
+}
+
+.studio-interior-1 {
+  color: var(--text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.studio-interior-2 {
+  color: var(--text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.studio-interior-3 {
+  color: var(--text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.zone-card {
+  list-style: none;
+  gap: 20px;
+}
+
+.Custom {
+  color: var(--main-color);
+  background-color: #FFF;
+  background-size: auto;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.Custom-h2 {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.Custom-text {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.Custom-cost {
+  border-radius: 100px;
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--nav-color);
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.Custom-moreinfo {
+  color: var(--secondary-color);
+}
+
+.Podcast {
+  color: var(--main-color);
+  background-color: #FFF;
+  background-size: auto;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.Podcast-text {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.Podcast-h2 {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.Podcast-cost {
+  border-radius: 100px;
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--nav-color);
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Podcast-moreinfo {
+  color: var(--secondary-color);
+}
+
+.Webinar {
+  color: var(--main-color);
+  background-color: #FFF;
+  background-size: auto;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.Webinar-text {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.Webinar-h2 {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.Webinar-cost {
+  border-radius: 100px;
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--nav-color);
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Webinar-moreinfo {
+  color: var(--secondary-color);
+}
+
+.Soon {
+  color: var(--main-color);
+  background-color: #FFF;
+  background-size: auto;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.Soon-text {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.Soon-h2 {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.Soon-cost {
+  border-radius: 100px;
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--nav-color);
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Soon-moreinfo {
+  color: var(--secondary-color);
+}
+
+.Slider-text-1 {
+  text-align: left;
+  font-family: 'Steelfish';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Slider-text-2 {
+  text-align: center;
+  font-family: 'Steelfish';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Slider-text-3 {
+  text-align: left;
+  font-family: 'Steelfish';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Slider {
+  list-style: none;
+}
+
+.Coffee {
+  border-radius: 10px;
+  background: var(--text-color);
+}
+
+.coffee {
+  color: var(--main-color);
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.coffe-h3 {
+  color: var(--main-color);
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.coffe-text {
+  color: var(--main-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.Playbzck {
+  border-radius: 10px;
+  background: var(--text-color);
+}
+
+.playbzck {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.playbzck-h3 {
+  color: var(--main-color);
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.playbzck-text {
+  color: var(--main-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.Makeup {
+  border-radius: 10px;
+  background: var(--text-color);
+}
+
+.makeup {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.makeup-h3 {
+  color: var(--main-color);
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.makeup-text {
+  color: var(--main-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.Cars {
+  border-radius: 10px;
+  background: var(--text-color);
+}
+
+.cars {
+  display: flex;
+  padding: 18px 20px 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.cars-h3 {
+  color: var(--main-color);
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.cars-text {
+  color: var(--main-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.Preliminary-cost {
+  color: var(--text-color);
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.preliminary-cost {
+  text-align: center;
+  color: var(--nav-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.Form {
+  text-align: center;
+  background-color: var(--text-color);
+  color: var(--main-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.Studio {
+  display: flex;
+  width: 280px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Timing {
+  display: flex;
+  width: 280px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Cam {
+  display: flex;
+  width: 280px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.PPL {
+  display: flex;
+  width: 280px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  align-self: stretch;
+}
+
+.pre-cost {
+  color: var(--main-color);
+  opacity: 0.5;
+}
+
+.pbook {
+  color: var(--nav-color);
+  display: flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: 0;
+  border-radius: 100px;
+  background: var(--secondary-color);
+}
+
+.Equipment-h4 {
+  color: var(--text-color);
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.equipment-text {
+  color: var(--nav-color);
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+
+.eq-btnlist {
+  list-style-type: none;
+}
+
+.eq-btn {
+  border-radius: 10px;
+  border: 3px solid var(--secondary-color);
+  background: var(--text-color);
 }
