@@ -1,9 +1,8 @@
 :root {
   font-size: 67.5%;
-  --main-color: #34344E;
-  --secondary-color: #F49C89;
-  --text-color: #eceef8;
-  --nav-color: #FFF;
+  --text-main: #34344E;
+  --text-accent: #F49C89;
+  --text-light: #eceef8;
 }
 
 /* inter-regular - cyrillic_latin */
@@ -43,670 +42,120 @@
 }
 
 body {
-  background-color: var(--main-color);
-  color: var(--text-color);
-  font-variant-numeric: lining-nums proportional-nums;
+  background-color: var(--text-main);
   font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.navigation {
-  list-style-type: none;
-  font-family: 'Inter';
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  letter-spacing: -0.6px;
-  text-transform: uppercase;
-}
-
-.navigation-logo {
-  text-decoration: none;
-  color: var(--nav-color);
-  font-variant-numeric: lining-nums proportional-nums;
-}
-
-.navigation-contacts {
-  text-decoration: none;
-  color: var(--nav-color);
-  font-variant-numeric: lining-nums proportional-nums;
-}
-
-.navigation-menu {
-  text-decoration: none;
-  background-color: var(--main-color);
-  color: var(--nav-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  border: 0;
 }
 
 .h1-hidden {
   visibility: hidden;
 }
 
-.title-1 {
-  font-family: 'Steelfish';
-  color: var(--text-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.title-2 {
-  font-family: 'Steelfish';
-  color: var(--text-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.hidden-h1 {
+.navigation-list {
+  display: inline-flex;
   list-style-type: none;
-}
-
-.Rectangle-75 {
-  border-radius: 200px;
-  background: url('/img/icons/Rectangle\ 75.svg'), lightgray 50% / cover no-repeat;
-}
-
-.Rectangle-76 {
-  border-radius: 200px;
-  background: url('/img/icons/Rectangle\ 76.svg'), lightgray 50% / cover no-repeat;
-}
-
-.Firstst-info {
-  width: 230px;
-  height: 17px;
-  color: var(--nav-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
+  color: white;
+  font-size: 1.5rem;
   font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.navigation-link {
+  color: white;
+  text-decoration: none;
+}
+
+.h1 {
+  list-style-type: none;
+  color: var(--text-light);
+  font-family: 'Steelfish';
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.h1-firstpart {
+  text-align: left;
+  margin: 0;
+}
+
+.h1-secondpart {
+  text-align: right;
+  margin: 0;
+}
+
+.h1-text {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
   line-height: 140%;
   letter-spacing: -0.24px;
   text-transform: uppercase;
 }
 
-.GetTestDrive {
-  font-family: 'Inter';
-  font-weight: 500;
-  text-transform: uppercase;
-  font-style: normal;
-  color: var(--nav-color);
+.gettestdrive {
+
+  color: white;
+  border-radius: 100px;
+  background: var(--text-accent);
   display: flex;
   width: 320px;
   padding: 13px 30px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border: 0;
-  border-radius: 100px;
-  background: var(--secondary-color);
-}
-
-.studio-interior-1 {
-  color: var(--text-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: 'Steelfish';
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.studio-interior-2 {
-  color: var(--text-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: 'Steelfish';
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.studio-interior-3 {
-  color: var(--text-color);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: 'Steelfish';
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.zone-card {
-  list-style: none;
-  gap: 20px;
-}
-
-.Custom {
-  color: var(--main-color);
-  background-color: #FFF;
-  background-size: auto;
-  font-family: 'Inter';
+  border: none;
   font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.Custom-h2 {
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.Custom-text {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  align-self: stretch;
-}
-
-.Custom-cost {
-  border-radius: 100px;
-  display: flex;
-  background-color: var(--secondary-color);
-  color: var(--nav-color);
-  padding: 5px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-}
-
-.Custom-moreinfo {
-  color: var(--secondary-color);
-}
-
-.Podcast {
-  color: var(--main-color);
-  background-color: #FFF;
-  background-size: auto;
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-  border-radius: 10px;
-}
-
-.Podcast-text {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  align-self: stretch;
-}
-
-.Podcast-h2 {
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.Podcast-cost {
-  border-radius: 100px;
-  display: flex;
-  background-color: var(--secondary-color);
-  color: var(--nav-color);
-  padding: 5px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.Podcast-moreinfo {
-  color: var(--secondary-color);
-}
-
-.Webinar {
-  color: var(--main-color);
-  background-color: #FFF;
-  background-size: auto;
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-  border-radius: 10px;
-}
-
-.Webinar-text {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  align-self: stretch;
-}
-
-.Webinar-h2 {
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.Webinar-cost {
-  border-radius: 100px;
-  display: flex;
-  background-color: var(--secondary-color);
-  color: var(--nav-color);
-  padding: 5px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.Webinar-moreinfo {
-  color: var(--secondary-color);
-}
-
-.Soon {
-  color: var(--main-color);
-  background-color: #FFF;
-  background-size: auto;
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-  border-radius: 10px;
-}
-
-.Soon-text {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  align-self: stretch;
-}
-
-.Soon-h2 {
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.Soon-cost {
-  border-radius: 100px;
-  display: flex;
-  background-color: var(--secondary-color);
-  color: var(--nav-color);
-  padding: 5px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.Soon-moreinfo {
-  color: var(--secondary-color);
-}
-
-.Slider-text-1 {
-  text-align: left;
-  font-family: 'Steelfish';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.Slider-text-2 {
-  text-align: center;
-  font-family: 'Steelfish';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.Slider-text-3 {
-  text-align: left;
-  font-family: 'Steelfish';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.Slider {
-  list-style: none;
-}
-
-.Coffee {
-  border-radius: 10px;
-  background: var(--text-color);
-}
-
-.coffee {
-  color: var(--main-color);
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.coffe-h3 {
-  color: var(--main-color);
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.coffe-text {
-  color: var(--main-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.Playbzck {
-  border-radius: 10px;
-  background: var(--text-color);
-}
-
-.playbzck {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.playbzck-h3 {
-  color: var(--main-color);
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.playbzck-text {
-  color: var(--main-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.Makeup {
-  border-radius: 10px;
-  background: var(--text-color);
-}
-
-.makeup {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.makeup-h3 {
-  color: var(--main-color);
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.makeup-text {
-  color: var(--main-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.Cars {
-  border-radius: 10px;
-  background: var(--text-color);
-}
-
-.cars {
-  display: flex;
-  padding: 18px 20px 20px 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.cars-h3 {
-  color: var(--main-color);
-  font-family: 'Steelfish';
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.cars-text {
-  color: var(--main-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.Preliminary-cost {
-  color: var(--text-color);
-  font-family: 'Steelfish';
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-}
-
-.preliminary-cost {
-  text-align: center;
-  color: var(--nav-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.Form {
-  text-align: center;
-  background-color: var(--text-color);
-  color: var(--main-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.24px;
   text-transform: uppercase;
 }
 
-.Studio {
-  display: flex;
-  width: 280px;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.Timing {
-  display: flex;
-  width: 280px;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.Cam {
-  display: flex;
-  width: 280px;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.PPL {
-  display: flex;
-  width: 280px;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.Type {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-  align-self: stretch;
-}
-
-.pre-cost {
-  color: var(--main-color);
-  opacity: 0.5;
-}
-
-.pbook {
-  color: var(--nav-color);
-  display: flex;
-  padding: 13px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border: 0;
-  border-radius: 100px;
-  background: var(--secondary-color);
-}
-
-.Equipment-h4 {
-  color: var(--text-color);
+.studio-interior {
   font-family: 'Steelfish';
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-}
-
-.equipment-text {
-  color: var(--nav-color);
-  font-family: 'Inter';
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  letter-spacing: -0.24px;
-  text-transform: uppercase;
-}
-
-.eq-btnlist {
   list-style-type: none;
+  color: var(--text-light);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
 }
 
-.eq-btn {
-  border-radius: 10px;
-  border: 3px solid var(--secondary-color);
-  background: var(--text-color);
+.studio-interior1 {
+  margin: 0;
+  text-align: center;
+}
+
+.studio-interior2 {
+  margin: 0;
+  text-align: left;
+}
+
+.zone-cards {
+  list-style-type: none;
+  padding-inline: 2rem;
+}
+
+.custom-card {
+  text-align: left;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.custom-h2 {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.custom {
+
 }
