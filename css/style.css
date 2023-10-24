@@ -48,32 +48,35 @@
 body {
   background-color: var(--text-main);
   font-family: 'Inter';
-}
-
-.h1-hidden {
-  visibility: hidden;
-}
-
-.h1-div {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navigation-list {
-  display: inline-flex;
-  list-style-type: none;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
   line-height: 140%;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.24px;
   text-transform: uppercase;
-  padding: 0;
 }
 
-.navigation-link {
-  color: white;
-  text-decoration: none;
+.header {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.header__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .h1 {
@@ -529,7 +532,7 @@ body {
   padding: 0 2rem 0 2rem;
 }
 
-.form {
+.pre-cost__div {
   border-radius: 1rem;
   background: var(--text-light);
   margin: 0 2rem 0 2rem;
@@ -554,7 +557,7 @@ body {
 }
 
 .select-timing {
-  color: var(--text-main);
+  color: var(--text-light);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 140%;
