@@ -55,6 +55,7 @@ body {
   line-height: 140%;
   letter-spacing: -0.24px;
   text-transform: uppercase;
+  color: var(--text-main);
 }
 
 .section {
@@ -208,6 +209,23 @@ a {
   margin-bottom: 12px;
 }
 
+.studio-card__cost {
+  display: flex;
+  transform: rotate(-5deg);
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--text-accent);
+  width: fit-content;
+  color: var(--text-light);
+  gap: 10px;
+}
+
+.cost__text {
+  margin-top: 10px;
+}
+
 .studio-zones__list {
   list-style-type: none;
   display: flex;
@@ -217,6 +235,19 @@ a {
 
 .studio-zones__list {
   list-style-type: none;
+}
+
+.studio-card__img {
+  width: 100%;
+  object-fit: cover;
+  background-color: none;
+}
+
+.studio-card__title {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  line-height: 110%;
+  letter-spacing: 0.6px;
 }
 
 /* /Cards */
