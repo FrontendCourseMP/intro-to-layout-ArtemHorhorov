@@ -76,6 +76,7 @@ a {
 }
 
 /* Header */
+
 .header {
   width: 360px;
   height: 58px;
@@ -86,12 +87,18 @@ a {
   padding: 17px 20px 16px 20px;
   justify-content: center;
   align-items: flex-start;
+  text-align: center;
 }
 
 .header__list {
   list-style-type: none;
   display: flex;
-  gap: 19px;
+  gap: 16px;
+}
+
+.header__list li {
+  display: flex;
+  align-items: center;
 }
 
 .header__menu-btn {
@@ -99,9 +106,18 @@ a {
   border: none;
 }
 
+.logo__icon {
+  padding-right: 10px;
+}
+
+.phone__icon {
+  padding-right: 10px;
+}
+
 /* /Header */
 
 /* Hero */
+
 .hero {
   padding-top: 82px;
 }
@@ -147,11 +163,13 @@ a {
 /* /Hero */
 
 /* About-studio */
+
 .about-studio {
   padding-top: 143px;
 }
 
 .about-studio__title {
+  margin-bottom: 30px;
   color: var(--text-light);
   font-family: 'Steelfish';
   font-weight: 700;
@@ -159,10 +177,16 @@ a {
   line-height: 110%;
   text-transform: uppercase;
 }
+
+.about-studio__title span:not(:nth-child(2)) {
+  padding-left: 57px;
+}
+
 /* /About-studio */
 
 
 /* Cards */
+
 .studio-card {
   border-radius: 10px;
   background: var(--text-light);
