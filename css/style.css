@@ -79,22 +79,17 @@ a {
 /* Header */
 
 .header {
-  width: 360px;
-  height: 58px;
   font-family: 'Inter';
   font-weight: 500;
   font-size: 1.5rem;
-  display: inline-flex;
   padding: 17px 20px 16px 20px;
-  justify-content: center;
   align-items: flex-start;
-  text-align: center;
 }
 
 .header__list {
   list-style-type: none;
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
 }
 
 .header__list li {
@@ -183,7 +178,46 @@ a {
   padding-left: 57px;
 }
 
+.studio-card__link {
+  color: var(--text-accent);
+  line-height: 140%;
+  letter-spacing: -0.48px;
+  text-decoration-line: underline;
+}
+
+.cost__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 /* /About-studio */
+
+/* Studio-zones */
+
+.studio-zones__title {
+  margin-top: 85px;
+  color: var(--text-light);
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+.studio-zones__title span:nth-child(1) {
+  padding-left: 57px;
+}
+
+.studio-card__content {
+  margin: 0;
+  gap: 10px;
+  overflow: hidden;
+}
+
+/* /Studio-zones */
+
+
 
 
 /* Cards */
@@ -222,10 +256,6 @@ a {
   gap: 10px;
 }
 
-.cost__text {
-  margin-top: 10px;
-}
-
 .studio-zones__list {
   list-style-type: none;
   display: flex;
@@ -238,6 +268,7 @@ a {
 }
 
 .studio-card__img {
+  border-radius: 10px;
   width: 100%;
   object-fit: cover;
   background-color: none;
@@ -249,5 +280,13 @@ a {
   line-height: 110%;
   letter-spacing: 0.6px;
 }
+
+.img {
+  height: 261px;
+  width: 261px;
+  width: 100%;
+  align-self: stretch;
+  border-radius: 10px;
+} 
 
 /* /Cards */
