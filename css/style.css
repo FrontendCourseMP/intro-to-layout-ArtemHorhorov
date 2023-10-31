@@ -47,6 +47,52 @@
   src: url(/fonts/SteelfishRg-Regular.woff2) format('woff2');
 }
 
+/* Form-selectors */
+
+input[type='radio'],
+label {
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--text-light);
+  border: 1.5px solid var(--text-accent);
+}
+
+input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--text-accent);
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+/* /Form-selectors */
+
+
 body {
   background-color: var(--text-main);
   font-family: 'Inter';
@@ -185,7 +231,7 @@ a {
   text-decoration-line: underline;
 }
 
-.cost__wrapper {
+.studio-card__wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
@@ -216,9 +262,6 @@ a {
 }
 
 /* /Studio-zones */
-
-
-
 
 /* Cards */
 
@@ -287,6 +330,123 @@ a {
   width: 100%;
   align-self: stretch;
   border-radius: 10px;
-} 
+}
 
 /* /Cards */
+
+/* Pre-cost */
+
+.pre-cost__title {
+  color: var(--text-light);
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin-top: 85px;
+  margin-bottom: 36px;
+}
+
+.pre-cost__text {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.pre-cost__div {
+  border-radius: 10px;
+  background: var(--text-light);
+  flex-direction: column;
+}
+
+.pre-cost__div img {
+  border-radius: 10px;
+}
+
+.pre-cost__form {
+  padding: 0 0;
+}
+
+/* Form */
+
+.form {
+  padding: 0 20px 20px 20px;
+}
+
+.form__fieldset {
+  padding: 0;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.form__question {
+  font-weight: 500;
+  padding-bottom: 15px;
+  padding-top: 18px;
+}
+
+fieldset {
+  border: 0;
+  display: flex;
+}
+
+/* /Form */
+
+.pre-cost__cost {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  line-height: 110%;
+  letter-spacing: 0.6;
+}
+
+.pre-cost__text2 {
+  color: var(--dark_light, rgba(52, 52, 78, 0.50));
+}
+
+.pre-cost__btn {
+  display: flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--text-accent);
+  color: white;
+  font-weight: 500;
+  border: 0;
+  block-size: fit-content;
+  width: 100%;
+}
+
+/* /Pre-cost */
+
+/* Studio-equipment */
+
+.studio-equipment__title {
+  margin-top: 85px;
+  color: var(--text-light);
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.studio-equipment__title span:nth-child(1) {
+  padding-left: 57px;
+}
+
+.studio-equipment__text {
+  color: white;
+  font-weight: 500;
+  padding: 30px 0 25px 0;
+}
+
+.studio-equipment__btn {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--text-light);
+}
+
+/* /Studio-equipment */
