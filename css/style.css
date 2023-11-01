@@ -354,8 +354,8 @@ a {
   flex-direction: column;
 }
 
-.pre-cost__div img {
-  border-radius: 10px;
+.pre-cost__img {
+  width: 100%;
 }
 
 .pre-cost__form {
