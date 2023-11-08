@@ -58,7 +58,6 @@ input[type='radio'] {
   position: relative;
   height: 24px;
   width: 24px;
-  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
@@ -85,6 +84,10 @@ input[type='radio']:checked::after {
   height: 15px;
   border-radius: 50%;
   background-color: var(--text-accent);
+}
+
+.form__answer {
+  flex-shrink: 0;
 }
 
 /* /Form-selectors */
@@ -178,7 +181,10 @@ a {
 
 .hero__title span:nth-child(3) {
   padding-left: 28px;
+}
 
+.hero__img2 {
+  padding-right: 6px;
 }
 
 .hero__text {
@@ -198,6 +204,7 @@ a {
   width: 100%;
   color: white;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* /Hero */
@@ -448,6 +455,7 @@ fieldset {
   border: 0;
   block-size: fit-content;
   width: 100%;
+  text-transform: uppercase;
 }
 
 /* /Pre-cost */
@@ -537,6 +545,7 @@ fieldset {
   background-color: var(--text-accent);
   color: var(--text-main);
   padding-top: 85px;
+  padding-bottom: 40px;
 }
 
 .test-drive__title {
@@ -562,14 +571,175 @@ fieldset {
   flex-direction: column;
   gap: 10px;
   text-align: left;
-  margin-left: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .test-drive__list li::marker {
-  content:  "— ";
+  content:  "—   ";
   position: relative;
   left:     -10px;
+}
 
+.test-drive__btn {
+  display: inline-flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--text-main);
+  border: 0;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: 19px;
+}
+
+.test-drive__img {
+  object-fit: cover;
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* /Test-drive */
+
+/* Filmed-in */
+
+.filmed-in {
+  background-color: var(--text-accent);
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.filmed-in__title {
+  color: white;
+  font-family: 'Steelfish';
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+/* /Filmed-in */
+
+/* Responsibility */
+
+.our-responsibility {
+  background-color: var(--text-accent);
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.our-responsibility__title {
+  color: white;
+  font-family: 'Steelfish';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  padding-bottom: 30px;
+}
+
+.our-responsibility__title span {
+  color: var(--text-main);
+}
+
+.our-responsibility__title span:nth-child(1) {
+  padding-left: 57px;
+}
+
+.our-responsibility__text {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.our-responsibility__btn {
+  color: white;
+  background-color: var(--text-main);
+  font-weight: 500;
+  display: inline-flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+/* /Responsibility */
+
+/* FAQ */
+
+.FAQ {
+  background-color: var(--text-accent);
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.FAQ__title {
+  color: white;
+  font-family: 'Steelfish';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.FAQ__list {
+  list-style-type: none;
+}
+
+.FAQ__list li {
+  border-top: 1px solid rgba(52, 52, 78, 0.20);
+  padding-bottom: 18px;
+}
+
+.FAQ__list li:last-child {
+  border-bottom: 1px solid rgba(52, 52, 78, 0.20);
+}
+
+.FAQ__question {
+  font-family: 'Steelfish';
+  font-size: 3rem;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+  margin-top: 14px;
+}
+
+/* /FAQ */
+
+/* Contact-us */
+
+.contact-us {
+  padding-top: 45px;
+  background-color: var(--text-accent);
+}
+
+.contact-us__title {
+  font-family: 'Steelfish';
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.contact-us__title span {
+  color: var(--text-main);
+  padding-left: 57px;
+}
+
+.contact-us__map {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* /Contact-us */
