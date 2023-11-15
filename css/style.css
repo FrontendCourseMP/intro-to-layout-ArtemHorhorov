@@ -58,7 +58,6 @@ input[type='radio'] {
   position: relative;
   height: 24px;
   width: 24px;
-  -moz-appearance: none;
   appearance: none;
   outline: none;
 }
@@ -328,7 +327,6 @@ a {
   border-radius: 10px;
   width: 100%;
   object-fit: cover;
-  background-color: none;
 }
 
 .studio-card__title {
@@ -750,7 +748,7 @@ fieldset {
   object-fit: cover;
   max-width: 100%;
   border-radius: 10px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .contact-us__list {
