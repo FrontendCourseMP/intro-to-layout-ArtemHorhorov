@@ -256,11 +256,7 @@
     <section class="filmed-in">
       <h2 class="filmed-in__title">Снято в нашей студии</h2>
       <ul class="filmed-in__list">
-        <li class="filmed-in__content"><iframe width="100%" height="100%"
-            src="https://www.youtube.com/embed/fPxcHdamVqA?si=xUSTUALOr61KfRU9" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe></li>
+        <li class="filmed-in__content"><img src="#" alt="video1"></li>
         <li class="filmed-in__content"><img src="#" alt="video2"></li>
         <li class="filmed-in__content"><img src="#" alt="video3"></li>
       </ul>
@@ -299,24 +295,23 @@
       <img class="contact-us__map" height="354" src="/images/img/map.png" alt="Map">
       <ul class="contact-us__list">
         <li class="contact-us__text">
-          <img class="contact-us__icon" src="#" alt="mail">
+          <img class="contact-us__icon" src="/images/icon/Mail.svg" alt="mail">
           <a href="mailto:hello@tochkakontenta.ru">hello@tochkakontenta.ru</a>
         </li>
         <li class="contact-us__text">
-          <img class="contact-us__icon" src="#" alt="phone">
+          <img class="contact-us__icon" src="/images/icon/phone.svg" alt="phone">
           <a href="tel:+7-909-151-08-70">+7 909 151-08-70</a>
         </li>
         <li class="contact-us__text">
-          <a href="#"><img class="contact-us__social-media" src="#" alt="Tg"></a>
-          <a href="#"><img class="contact-us__social-media" src="#" alt="WApp"></a>
+          <a href="https://t.me/art_h0r"><img class="contact-us__social-media" src="/images/icon/telegram-dark.svg" alt="Tg"></a>
+          <a href="#"><img class="contact-us__social-media" src="/images/icon/wapp-dark.svg" alt="WApp"></a>
         </li>
         <li class="contact-us__text">
-          <img class="contact-us__icon" src="#" alt="working-hours">
-          <p>Работаем с 8:00 до 22:00</p>
-          <p>по предварительной записи</p>
+          <img class="contact-us__icon" src="/images/icon/worktime.svg" alt="working-hours">
+          <p>Работаем с 8:00 до 22:00 <span>по предварительной записи</span></p>
         </li>
         <li class="contact-us__text">
-          <img class="contact-us__icon" src="#" alt="route">
+          <img class="contact-us__icon" src="/images/icon/location.svg" alt="route">
           <p>МОСКВА, УЛ. САДОВАЯ-КАРЕТНАЯ УЛИЦА, 20С2</p>
         </li>
       </ul>
@@ -324,34 +319,38 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__wrapper">
-      <a class="footer__logo logo" href="#"><img src="#" alt="logo"></a>
-      <ul class="footer__links-list">
-        <li><a class="footer__links" href="#">Студии</a></li>
-        <li><a class="footer__links" href="#">Кейсы</a></li>
-        <li><a class="footer__links" href="#">Тест-драйв</a></li>
-        <li><a class="footer__links" href="#">Контакты</a></li>
-      </ul>
-      <ul class="footer__social-media-list social-media-list">
-        <li><a class="social-media-list__social-media" href="#"><img src="#" alt="Tg"></a></li>
-        <li><a class="social-media-list__social-media" href="#"><img src="#" alt="WApp"></a></li>
-        <li><a class="social-media-list__social-media" href="#"><img src="#" alt="Vk"></a></li>
-        <li><a class="social-media-list__social-media" href="#"><img src="#" alt="YT"></a></li>
-      </ul>
-      <ul class="footer__contacts">
-        <li><a class="footer__links mail" href="mailto:hello@tochkakontenta.ru">hello@tochkakontenta.ru</a></li>
-        <li><a class="footer__links tel" href="tel:+7-909-151-08-70">+7 909 151-08-70</a></li>
-      </ul>
+    <div class="footer__grid">
+      <a class="footer__logo logo" href="#"><img src="/images/icon/point(1).svg" alt="logo">TOCHKA</a>
+        <ul class="footer__links-row row-1">
+          <li><a class="footer__link" href="#">Студии</a></li>
+          <li><a class="footer__link" href="#">Кейсы</a></li>
+        </ul>
+        <ul class="footer__links-row row-2">
+          <li><a class="footer__link" href="#">Тест-драйв</a></li>
+          <li><a class="footer__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer__social-media-list footer__socials">
+          <li><a class="social-media-list__social-media" href="#"><img src="/images/icon/vk-light.svg" alt="Vk"></a></li>
+          <li><a class="social-media-list__social-media" href="#"><img src="/images/icon/yt-light.svg" alt="YT"></a></li>
+        </ul>
+        <ul class="footer__messenger-links footer__socials">
+          <li><a class="social-media-list__social-media" href="#"><img src="/images/icon/telegram-light.svg" alt="Tg"></a></li>
+          <li><a class="social-media-list__social-media" href="#"><img src="/images/icon/wapp-light.svg" alt="WApp"></a></li>
+        </ul>
+        <ul class="footer__contacts">
+          <li><a class="footer__link mail" href="mailto:hello@tochkakontenta.ru">hello@tochkakontenta.ru</a></li>
+          <li><a class="footer__link tel" href="tel:+7-909-151-08-70">+7 909 151-08-70</a></li>
+        </ul>
+      </div>
       <ul class="footer__bottom">
         <li class="footer__bottom-text">
           <p>ООО «Стрим Парк», ОГРН 1187847305931</p>
         </li>
-        <li class="footer__bottom-text"><a class="PrivacyPolicy" href="#">Политика конфиденциальности</a></li>
+        <li class="footer__bottom-text"><a class="privacypolicy" href="#">Политика конфиденциальности</a></li>
         <li class="footer__bottom-text">
-          <p>Разработка сайта — <a class="Creator" href="#">Kate lazareva</a></p>
+          <p>Разработка сайта — <a class="creator" href="#">Kate lazareva</a></p>
         </li>
       </ul>
-    </div>
   </footer>
 
 </body>

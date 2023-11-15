@@ -44,7 +44,7 @@
   font-family: 'Steelfish';
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/SteelfishRg-Regular.woff2) format('woff2');
+  src: url('/fonts/SteelfishRg-Regular.woff2') format('woff2');
 }
 
 /* Form-selectors */
@@ -92,7 +92,6 @@ input[type='radio']:checked::after {
 
 /* /Form-selectors */
 
-
 body {
   background-color: var(--text-main);
   font-family: 'Inter';
@@ -120,6 +119,12 @@ a {
 
 .logo {
   color: white;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -130,6 +135,10 @@ a {
   font-size: 1.5rem;
   padding: 17px 20px 16px 20px;
   align-items: flex-start;
+  position: sticky;
+  top: 0;
+  background-color: var(--text-main);
+  z-index: 100;
 }
 
 .header__list {
@@ -401,7 +410,7 @@ a {
 .form__question {
   font-weight: 500;
   margin-bottom: 15px;
-  margin-top: 18px;
+  padding-top: 18px;
 }
 
 fieldset {
@@ -576,9 +585,9 @@ fieldset {
 }
 
 .test-drive__list li::marker {
-  content:  "—   ";
+  content: "—   ";
   position: relative;
-  left:     -10px;
+  left: -10px;
 }
 
 .test-drive__btn {
@@ -718,6 +727,7 @@ fieldset {
 
 .contact-us {
   padding-top: 45px;
+  padding-bottom: 90px;
   background-color: var(--text-accent);
 }
 
@@ -740,6 +750,120 @@ fieldset {
   object-fit: cover;
   max-width: 100%;
   border-radius: 10px;
+  padding-bottom: 25px;
+}
+
+.contact-us__list {
+  list-style-type: none;
+  font-weight: 500;
+}
+
+.contact-us__text {
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(52, 52, 78, 0.20);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-us__list li:nth-child(1) {
+  border-top: 1px solid rgba(52, 52, 78, 0.20);
+}
+
+.contact-us a {
+  color: var(--text-main);
+}
+
+.contact-us__text span {
+  opacity: 0.5;
 }
 
 /* /Contact-us */
+
+/* Footer */
+
+footer {
+  padding: 87px 20px 90px 20px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-areas:
+    "logo links-row-1 links-row-2"
+    "logo messenger social"
+    "logo contacts contacts";
+  gap: 15px 20px;
+  padding-bottom: 30px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: auto;
+  grid-area: logo;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__links-row {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__links-row.row-1 {
+  grid-area: links-row-1;
+}
+
+.footer__links-list.row-1 {
+  grid-area: links-row-2;
+}
+
+.footer__messenger-links {
+  grid-area: messenger;
+}
+
+.footer__social-media-list {
+  grid-area: social;
+}
+
+.footer__contacts {
+  grid-area: contacts;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__contacts a {
+  font-weight: 500;
+}
+
+.footer__bottom {
+  list-style-type: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 15px;
+}
+
+.footer__bottom-text {
+  color: rgba(255, 255, 255, 0.40);
+}
+
+.privacypolicy {
+  color: rgba(255, 255, 255, 0.40);
+}
+
+.creator {
+  color: var(--text-accent);
+}
+
+/* /Footer */
