@@ -9,6 +9,7 @@
   --text-main: #34344E;
   --text-accent: #F49C89;
   --text-light: #eceef8;
+  --text-white: #fff;
 }
 
 /* inter-regular - cyrillic_latin */
@@ -93,7 +94,7 @@ input[type='radio']:checked::after {
 
 body {
   background-color: var(--text-main);
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 140%;
@@ -113,11 +114,11 @@ span {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-white);
 }
 
 .logo {
-  color: white;
+  color: var(--text-white);
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -126,10 +127,11 @@ a {
   text-transform: uppercase;
 }
 
+
 /* Header */
 
 .header {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   padding: 17px 20px 16px 20px;
@@ -196,7 +198,7 @@ a {
 }
 
 .hero__text {
-  color: white;
+  color: var(--text-white);
   margin-bottom: 20px;
 }
 
@@ -210,7 +212,7 @@ a {
   border: none;
   margin: 0 auto;
   width: 100%;
-  color: white;
+  color: var(--text-white);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -226,7 +228,7 @@ a {
 .about-studio__title {
   margin-bottom: 30px;
   color: var(--text-light);
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-weight: 700;
   font-size: 4rem;
   line-height: 110%;
@@ -257,7 +259,7 @@ a {
 .studio-zones__title {
   margin-top: 85px;
   color: var(--text-light);
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
@@ -281,6 +283,11 @@ a {
 .studio-card {
   border-radius: 10px;
   background: var(--text-light);
+  flex-shrink: 0;
+}
+
+.studio-zones__studio-zone {
+  max-width: 261px ;
 }
 
 .about-studio__list {
@@ -315,12 +322,10 @@ a {
 .studio-zones__list {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
   gap: 10px;
-}
-
-.studio-zones__list {
-  list-style-type: none;
+  padding: 0 20px;
+  overflow: auto;
+  margin: 0 -20px;
 }
 
 .studio-card__img {
@@ -330,7 +335,7 @@ a {
 }
 
 .studio-card__title {
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 3rem;
   line-height: 110%;
   letter-spacing: 0.6px;
@@ -350,7 +355,7 @@ a {
 
 .pre-cost__title {
   color: var(--text-light);
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
@@ -359,7 +364,7 @@ a {
 }
 
 .pre-cost__text {
-  color: white;
+  color: var(--text-white);
   margin-bottom: 30px;
 }
 
@@ -438,7 +443,7 @@ fieldset {
 }
 
 .pre-cost__cost {
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 3rem;
   line-height: 100%;
   letter-spacing: 0.6px;
@@ -457,7 +462,7 @@ fieldset {
   align-items: center;
   border-radius: 100px;
   background: var(--text-accent);
-  color: white;
+  color: var(--text-white);
   font-weight: 500;
   border: 0;
   block-size: fit-content;
@@ -476,7 +481,7 @@ fieldset {
 .studio-equipment__title {
   margin-top: 85px;
   color: var(--text-light);
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
@@ -487,7 +492,7 @@ fieldset {
 }
 
 .studio-equipment__text {
-  color: white;
+  color: var(--text-white);
   font-weight: 500;
   padding: 30px 0 25px 0;
 }
@@ -527,7 +532,7 @@ fieldset {
 
 .studio-workspace__title {
   color: var(--text-light);
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
@@ -556,7 +561,7 @@ fieldset {
 }
 
 .test-drive__title {
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
@@ -596,7 +601,7 @@ fieldset {
   border-radius: 100px;
   background-color: var(--text-main);
   border: 0;
-  color: white;
+  color: var(--text-white);
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
@@ -621,13 +626,38 @@ fieldset {
 }
 
 .filmed-in__title {
-  color: white;
-  font-family: 'Steelfish';
+  color: var(--text-white);
+  font-family: 'Steelfish', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
   text-transform: uppercase;
   padding-left: 20px;
+}
+
+.filmed-in__list {
+  display: flex;
+  overflow: auto;
+  list-style-type: none;
+  gap: 10px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.filmed-in__content {
+  position: relative;
+  flex-shrink: 0;
+
+}
+
+.yt-icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.filmed-in__content img {
+  border-radius: 10px;
 }
 
 /* /Filmed-in */
@@ -641,8 +671,8 @@ fieldset {
 }
 
 .our-responsibility__title {
-  color: white;
-  font-family: 'Steelfish';
+  color: var(--text-white);
+  font-family: 'Steelfish', sans-serif;
   font-weight: 700;
   font-size: 4rem;
   line-height: 110%;
@@ -665,7 +695,7 @@ fieldset {
 }
 
 .our-responsibility__btn {
-  color: white;
+  color: var(--text-white);
   background-color: var(--text-main);
   font-weight: 500;
   display: inline-flex;
@@ -688,8 +718,8 @@ fieldset {
 }
 
 .FAQ__title {
-  color: white;
-  font-family: 'Steelfish';
+  color: var(--text-white);
+  font-family: 'Steelfish', sans-serif;
   font-weight: 700;
   font-size: 4rem;
   line-height: 110%;
@@ -711,7 +741,7 @@ fieldset {
 }
 
 .FAQ__question {
-  font-family: 'Steelfish';
+  font-family: 'Steelfish', sans-serif;
   font-size: 3rem;
   line-height: 110%;
   letter-spacing: 0.6px;
@@ -730,8 +760,8 @@ fieldset {
 }
 
 .contact-us__title {
-  font-family: 'Steelfish';
-  color: white;
+  font-family: 'Steelfish', sans-serif;
+  color: var(--text-white);
   font-size: 4rem;
   font-weight: 700;
   line-height: 110%;
