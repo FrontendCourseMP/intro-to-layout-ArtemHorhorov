@@ -5,14 +5,14 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 3rem;
 }
 
 .card {
+  align-self: center;
   position: relative;
   perspective: 1000px;
   margin-top: 30px;
+  font-size: 3rem;
 }
 
 .card__front,

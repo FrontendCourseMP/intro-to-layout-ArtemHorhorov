@@ -6,7 +6,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Steelfish-bold';
     src: url('../fonts/SteelfishRg-Bold.woff2') format('woff2');
@@ -20,7 +19,6 @@
     font-weight: normal;
     font-display: swap;
 }
-
 
 html ::selection {
     color: var(--main);
@@ -257,7 +255,7 @@ header {
     background-color: var(--main-text);
     color: var(--main);
     max-width: 320px;
-    border-radius: 10px;
+    border-radius: 11px;
 }
 
 .list__card img {
@@ -423,7 +421,6 @@ header {
     padding-top: 18px;
     padding-bottom: 15px;
     text-transform: uppercase;
-
     font-weight: 500;
 }
 

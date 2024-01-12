@@ -3,8 +3,6 @@ ul {
   padding-inline-start: 0;
 }
 
-
-
 .grid-container-1 {
   height: 50vw;
   width: 50vw;
@@ -100,7 +98,7 @@ ul {
   width: 95%;
   margin: 50px auto;
   background: rgb(182, 235, 85);
-  border-radius: 25px;
+  border-radius: 20px;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(6, 1fr);

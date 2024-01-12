@@ -1,0 +1,158 @@
+:root {
+  --peach: #fd6941e0;
+  --main-text: #fff;
+  --main: #242430;
+  --text-second: #FFF;
+  --line-color: rgba(52, 52, 78, 0.50);
+  font-size: 62.5%;
+}
+
+.form__wrapper {
+  margin: 0 20px;
+}
+
+.form__title {
+  text-align: center;
+  font-size: 8rem;
+  margin-bottom: 30px;
+}
+
+.form {
+  max-width: 1100px;
+  min-height: 500px;
+  margin: 0 auto;
+  background-color: var(--main);
+}
+
+legend {
+  text-align: center;
+  font-size: 4rem;
+}
+
+fieldset {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: var(--peach);
+}
+
+label {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input, select {
+  min-width: 250px;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-radius: 5px;
+  height: 20px;
+}
+
+input:required {
+  border: 2px solid var(--peach);
+}
+
+input::placeholder {
+  padding: 2px 0 2px 5px
+}
+
+span {
+  font-size: 2.6rem;
+  align-self: center;
+}
+
+.Time {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.required {
+  border: 5px solid rgb(255, 0, 0);
+}
+
+.forma-checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+.timing {
+  font-size: 2rem;
+}
+
+.timing input {
+  min-width: 60px;
+}
+
+.wrapper__button {
+  display: flex;
+  justify-content: center;
+}
+
+.button__send, .button__reset {
+  margin: 10px 30px;
+  width: 160px;
+  height: 40px;
+  border: 2px solid var(--peach);
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.term::first-letter {
+  color: rgb(255, 0, 0);
+  font-size: 6rem;
+}
+
+.term {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.description::before {
+  content: "🛈 ";
+}
+
+.description {
+  font-size: 2rem;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+input[type="checkbox"] {
+  margin: 10px;
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.checkbox-wrapper:nth-child(odd) {
+  color: var(--peach);
+}
+
+input:checked+span {
+  text-decoration: line-through;
+}
+
+.logo {
+  padding: 5px;
+  transform: rotate(30deg) scale(1.5) skewX(-15deg) skewY(-10deg);
+}
+
+.item__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header__link_span {
+  font-size: 1.5rem;
+}
