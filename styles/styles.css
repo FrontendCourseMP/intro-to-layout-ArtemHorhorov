@@ -294,7 +294,7 @@ header {
     max-width: 101px;
     margin-top: 12px;
     margin-bottom: 10px;
-    letter-spacing: 4%;
+    letter-spacing: -0.24px;
 }
 
 .list__card:nth-child(2) .card__cost {
@@ -366,7 +366,7 @@ header {
 
 .facilities__list li img {
     max-width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     object-fit: cover;
 }
 
